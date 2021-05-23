@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "112221961288",
+    "project_id": "uasmobile-2baa2",
+    "storage_bucket": "uasmobile-2baa2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:112221961288:android:b5667a02c7509315fdac7d",
+        "android_client_info": {
+          "package_name": "com.example.uas_mobile"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "112221961288-7skr9b0750sus9n3neo693dm0mm1kl2v.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.uas_mobile",
+            "certificate_hash": "0c04335736cbeea5b65ae23e49666d980500185c"
+          }
+        },
+        {
+          "client_id": "112221961288-sgfe3ekdrp66gre8s9oakrudkvvkh043.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCRPsQh1lYPiZXvyG9eHaq3c6UIEMcPId8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "112221961288-sgfe3ekdrp66gre8s9oakrudkvvkh043.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
