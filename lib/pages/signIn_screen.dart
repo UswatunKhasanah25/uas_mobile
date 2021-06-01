@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'login_page.dart';
 import 'sign_in.dart';
 
-class FirstScreen extends StatelessWidget {
+class SignInScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -11,7 +11,7 @@ class FirstScreen extends StatelessWidget {
           gradient: LinearGradient(
             begin: Alignment.topRight,
             end: Alignment.bottomLeft,
-            colors: [Colors.brown[100], Colors.brown[500]],
+            colors: [Colors.brown[100], Colors.brown[400]],
           ),
         ),
         child: Center(
@@ -19,29 +19,29 @@ class FirstScreen extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             mainAxisSize: MainAxisSize.max,
             children: <Widget>[
-              CircleAvatar(
-                backgroundImage: NetworkImage(
-                  imageUrl,
-                ),
-                radius: 60,
-                backgroundColor: Colors.transparent,
-              ),
-              SizedBox(height: 40),
+              Image.network("https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/apple/96/female-cook-type-1-2_1f469-1f3fb-200d-1f373.png"),
               Text(
-                'NAME',
+                'Welcome',
                 style: TextStyle(
-                    fontSize: 15,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.black54),
+                    fontSize: 30,
+                    fontWeight: FontWeight.w900,
+                    color: Colors.white),
               ),
               Text(
-                name,
+                'to',
                 style: TextStyle(
                     fontSize: 25,
-                    color: Colors.black,
-                    fontWeight: FontWeight.bold),
+                    fontWeight: FontWeight.w900,
+                    color: Colors.white),
               ),
-              SizedBox(height: 20),
+              Text(
+                'Resto Uswa',
+                style: TextStyle(
+                    fontSize: 40,
+                    fontWeight: FontWeight.w900,
+                    color: Colors.white),
+              ),
+              SizedBox(height: 40),
               Text(
                 'EMAIL',
                 style: TextStyle(
@@ -50,7 +50,7 @@ class FirstScreen extends StatelessWidget {
                     color: Colors.black54),
               ),
               Text(
-                email,
+                '$email',
                 style: TextStyle(
                     fontSize: 25,
                     color: Colors.black,
@@ -59,13 +59,13 @@ class FirstScreen extends StatelessWidget {
               SizedBox(height: 40),
               RaisedButton(
                 onPressed: () {
-                  signOutGoogle();
+                    signOutEmail();
                   Navigator.of(context).pushAndRemoveUntil(
                       MaterialPageRoute(builder: (context) {
                     return LoginPage();
                   }), ModalRoute.withName('/'));
                 },
-                color: Colors.brown[600],
+                color: Colors.brown[500],
                 child: Padding(
                   padding: const EdgeInsets.all(8.0),
                   child: Text(
